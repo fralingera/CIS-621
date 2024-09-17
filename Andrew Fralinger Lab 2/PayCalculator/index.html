@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bi-Weekly Pay Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="calculate_pay.js"></script>
+</head>
+<body>
+    <h1>Welcome to Andrew's Bi-Weekly Pay Calculator!</h1>
+    <br />
+    <label>Hours Worked in this 2 week period: </label>
+    <input type="text" id="hours"  /> <label id="hourError" hidden>Your Hours must be numerical and between 0 and 161.</label><br /><br />
+    <label>Your Hourly Rate: </label>
+    <input type="text" id="rate" /> <label id="rateError" hidden>Your Rate must be numerical and greater than $0.</label><br /><br />
+    <label>Your Gross Pay: </label>
+    <input type="text" id="gross" disabled="disabled" /><br /><br />
+    <label>Your Net Pay: </label>
+    <input type="text" id="net" disabled="disabled" /><br /><br />
+    <input type="button" id="calculate" value="Calculate Gross and Net Pay" />
+    <!--<input type="text" disabled="disabled" id="salary" />Used for debugging.  Salary was registering as NaN.-->
+</body>
+</html>
